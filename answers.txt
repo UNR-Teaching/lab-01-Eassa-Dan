@@ -1,0 +1,30 @@
+3. Type `ls` to view the contents of your lab directory. Now type the command `ls > newfile.txt`. Use the `ls` command again to view the contents of the directory. What has changed? What do you think the `>` in the previous statement did when combined with the `ls` command?
+
+newfile.txt is now in the lab1 directory. The file contains a list of all of the files within that directory.
+
+
+
+4. Add `newfile.txt` to the git repository using the command `git add newfile.txt`
+5. Run the command `git status`. What does it say about `newfile.txt`?
+
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   newfile.txt
+
+
+
+6. Open the file `newfile.txt` in a editor. Add the line "This is my file listing" to the top of the file and save it. Now run the command `git diff`. What does this command tell you about your files and their contents? You will need to type 'q' to exit the diff viewer.
+
+diff --git a/newfile.txt b/newfile.txt
+index b0902fe..02b8b16 100644
+--- a/newfile.txt
++++ b/newfile.txt
+@@ -1,3 +1,4 @@
++This is my file listing
+ answers.txt
+ _config.yml
+ newfile.txt
